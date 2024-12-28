@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- CDN LINK OF BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .btn-secondary {
+        background-color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-l">
+      <a class="navbar-brand" href="#">Brand</a>
+      <a class="navbar-brand" href="#">Shop</a>
+    </nav>
+    <h1 style="display: flex; justify-content: center; color: cadetblue">
+      Hello, world!
+    </h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">Column 1</div>
+        <!-- pre definded designs of the button -->
+        <button class="btn btn-primary">Click Me</button>
+        <div class="col-md-12">Column 2</div>
+        <!-- pre definded designs of the button -->
+        <button class="btn btn-secondary">Click Me</button>
+        <!-- pre definded cards -->
+        <div class="card" style="width: 18rem">
+          <img src="./assests/761.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">Some text in the card body.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SIMPLE BREAK POINTS EXAMPLE -->
+    <div>
+      <div class="d-none d-md-block">
+        Visible only on medium screens and larger
+      </div>
+      <div class="d-block d-md-none">Visible only on small screens</div>
+    </div>
+    <!-- BREAK POINTS EXAMPLE WITH ROW AND COLUMNS -->
+
+    <div>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 col-md-4 col-lg-12"
+            style="border: 1px solid black"
+          >
+            Column 1
+          </div>
+          <div class="col-12 col-md-4 col-lg-6" style="border: 1px solid black">
+            Column 2
+          </div>
+          <div class="col-12 col-md-4 col-lg-6" style="border: 1px solid black">
+            Column 3
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTAINERS -->
+    <div class="container">
+      <h1>content</h1>
+    </div>
+    <div class="container-sm">100% wide until small breakpoint</div>
+    <div class="container-md">100% wide until medium breakpoint</div>
+    <div class="container-lg">100% wide until large breakpoint</div>
+    <div class="container-xl">100% wide until extra large breakpoint</div>
+    <div class="container-xxl">
+      100% wide until extra extra large breakpoint
+    </div>
+
+    <!-- normal container -->
+    <div class="container" style="border: 1px solid black">
+      <h1>Fixed Width Container</h1>
+      <p>
+        This container adjusts width based on the screen size but remains fixed
+        within the breakpoints.
+      </p>
+    </div>
+    <!-- container with full width -->
+    <div class="container-fluid" style="border: 1px solid blue">
+      <h1>Full Width Container</h1>
+      <p>
+        This container stretches across the full width of the screen, regardless
+        of its size.
+      </p>
+    </div>
+    <!-- contanier fixed width container -->
+    <div class="container-md" style="border: 1px solid green">
+      <h1>Responsive Fixed Width (container-md)</h1>
+      <p>
+        This container behaves like a fixed-width container but becomes
+        full-width on screens smaller than the `md` breakpoint.
+      </p>
+    </div>
+    <!-- Practical Example with Nested Rows and Columns -->
+    <div class="container" style="border: 1px solid black; padding: 20px">
+      <h1>Container Example</h1>
+      <div class="row">
+        <div class="col-md-6" style="border: 1px solid red">Column 1</div>
+        <div class="col-md-6" style="border: 1px solid blue">Column 2</div>
+      </div>
+    </div>
+
+    <!-- GRID -->
+    <div
+      class="container text-center"
+      style="border: 10px solid rgb(0, 255, 106); margin-top: 1em"
+    >
+      <div class="row">
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+      </div>
+    </div>
+
+    <!-- Equal-width  -->
+    <h1 class="text-center">Equal-width</h1>
+    <div
+      class="container text-center"
+      style="border: 1px solid #000; border-collapse: collapse"
+    >
+      <div class="row">
+        <div class="col">1 of 2</div>
+        <div class="col">2 of 2</div>
+      </div>
+      <div class="row">
+        <div class="col">1 of 3</div>
+        <div class="col">2 of 3</div>
+        <div class="col">3 of 3</div>
+      </div>
+    </div>
+    <!-- Setting one column width  -->
+    <h1 class="text-center">Setting one column width</h1>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">1 of 3</div>
+        <div class="col-6">2 of 3 (wider)</div>
+        <div class="col">3 of 3</div>
+      </div>
+      <div class="row">
+        <div class="col">1 of 3</div>
+        <div class="col-5">2 of 3 (wider)</div>
+        <div class="col">3 of 3</div>
+      </div>
+    </div>
+    <!-- Variable width content -->
+    <h1 class="text-center">Variable width content</h1>
+    <div class="container text-center">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2">1 of 3</div>
+        <div class="col-md-auto">Variable width content</div>
+        <div class="col col-lg-2">3 of 3</div>
+      </div>
+      <div class="row">
+        <div class="col">1 of 3</div>
+        <div class="col-md-auto">Variable width content</div>
+        <div class="col col-lg-2">3 of 3</div>
+      </div>
+    </div>
+    <!-- Responsive classes -->
+    <!-- All breakpoints -->
+    <h1 class="text-center">Responsive classes All breakpoints</h1>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">col</div>
+        <div class="col">col</div>
+        <div class="col">col</div>
+        <div class="col">col</div>
+      </div>
+      <div class="row">
+        <div class="col-8">col-8</div>
+        <div class="col-4">col-4</div>
+      </div>
+    </div>
+    <!-- COLUMNS -->
+    <h2 class="text-center">Columns</h2>
+    <h2 class="text-center">Alignment</h2>
+    <div class="container text-center">
+      <h2 class="text-center">Vertical alignment</h2>
+      <div class="row align-items-start">
+        <div class="col">One of three columns</div>
+        <div class="col">One of three columns</div>
+        <div class="col">One of three columns</div>
+      </div>
+    </div>
+    <div class="col-3 p-3 mb-2">.col-3: width of 25%</div>
+    <div class="col-sm-9 p-3">.col-sm-9: width of 75% above sm breakpoint</div>
+    <!-- GUTTERS -->
+    <div class="container">
+      <div class="row g-3">
+        <!-- Default gutter spacing -->
+        <div class="col-md-6" style="background-color: lightblue">Column 1</div>
+        <div class="col-md-6" style="background-color: lightgreen">
+          Column 2
+        </div>
+      </div>
+
+      <div class="row gx-4 gy-2">
+        <!-- Custom gutter classes -->
+        <div class="col-md-6" style="background-color: lightcoral">
+          Column 1
+        </div>
+        <div class="col-md-6" style="background-color: lightyellow">
+          Column 2
+        </div>
+      </div>
+
+      <div class="row g-0">
+        <!-- No gutters -->
+        <div class="col-md-6" style="background-color: lightgray">Column 1</div>
+        <div class="col-md-6" style="background-color: lightpink">Column 2</div>
+      </div>
+    </div>
+    <!-- Horizontal & vertical gutters -->
+    <h2 class="text-center">Horizontal & vertical gutters</h2>
+    <div class="container text-center">
+      <div class="row g-2">
+        <div class="col-6">
+          <div class="p-3">Custom column padding</div>
+        </div>
+        <div class="col-6">
+          <div class="p-3">Custom column padding</div>
+        </div>
+        <div class="col-6">
+          <div class="p-3">Custom column padding</div>
+        </div>
+        <div class="col-6">
+          <div class="p-3">Custom column padding</div>
+        </div>
+      </div>
+    </div>
+    <!-- Row columns gutters  -->
+    <div class="container text-center">
+      <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+        <div class="col">
+          <div class="p-3">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3">Row column</div>
+        </div>
+      </div>
+    </div>
+    <!-- above are layout of the boot strap -->
+    <h1 class="text-center">above are layout of the boot strap</h1>
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <h1>FORMS</h1>
+    <!-- FORM WITH DEFAULT -->
+    <form
+      style="
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10em;
+        background-color: beige;
+      "
+    >
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+        <div id="emailHelp" class="form-text">
+          We'll never share your email with anyone else.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <!-- FORM CONTROL -->
+    <h1>Form-Control</h1>
+    <p>
+      Give textual form controls like inputs and inputarea as an upgrade with
+      custom styles, sizing, focus states, and more.
+    </p>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label"
+        >Email address</label
+      >
+      <input
+        type="email"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="name@example.com"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label"
+        >Example textarea</label
+      >
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        rows="3"
+      ></textarea>
+    </div>
+    <!--  -->
+    <div class="row g-3 align-items-center">
+      <div class="col-auto">
+        <label for="inputPassword6" class="col-form-label">Password</label>
+      </div>
+      <div class="col-auto">
+        <input
+          type="password"
+          id="inputPassword6"
+          class="form-control"
+          aria-describedby="passwordHelpInline"
+        />
+      </div>
+      <div class="col-auto">
+        <span id="passwordHelpInline" class="form-text">
+          Must be 8-20 characters long.
+        </span>
+      </div>
+    </div>
+    <input
+      class="form-control"
+      type="text"
+      value="Don't type here"
+      aria-label="readonly input example"
+      readonly
+    />
+    <!--  -->
+    <br />
+    <br />
+    <div class="mb-3">
+      <label for="formFile" class="form-label"
+        >Default file input example</label
+      >
+      <input class="form-control" type="file" id="formFile" />
+    </div>
+    <div class="mb-3">
+      <label for="formFileMultiple" class="form-label"
+        >Multiple files input example</label
+      >
+      <input class="form-control" type="file" id="formFileMultiple" multiple />
+    </div>
+    <div class="mb-3">
+      <label for="formFileDisabled" class="form-label"
+        >Disabled file input example</label
+      >
+      <input class="form-control" type="file" id="formFileDisabled" disabled />
+    </div>
+    <div class="mb-3">
+      <label for="formFileSm" class="form-label"
+        >Small file input example</label
+      >
+      <input class="form-control form-control-sm" id="formFileSm" type="file" />
+    </div>
+    <div>
+      <label for="formFileLg" class="form-label"
+        >Large file input example</label
+      >
+      <input class="form-control form-control-lg" id="formFileLg" type="file" />
+    </div>
+    <br /><br />
+    <!-- Data list -->
+    <h1>Data list</h1>
+    <label for="exampleDataList" class="form-label">Datalist example</label>
+    <input
+      class="form-control"
+      list="datalistOptions"
+      id="exampleDataList"
+      placeholder="Type to search..."
+    />
+    <datalist id="datalistOptions">
+      <option value="San Francisco"></option>
+      <option value="New York"></option>
+      <option value="Seattle"></option>
+      <option value="Los Angeles"></option>
+      <option value="Chicago"></option>
+    </datalist>
+    <!-- select -->
+    <h1>Drop down</h1>
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <br />
+    <!--  -->
+    <select
+      class="form-select"
+      multiple
+      aria-label="Multiple select example"
+      size="10"
+    >
+      <option selected>Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+      <option value="3">Three</option>
+      <option value="3">Three</option>
+      <option value="3">Three</option>
+    </select>
+    <br />
+    <!-- FLOATING LABELS -->
+    <form class="form-floating">
+      <input
+        type="email"
+        class="form-control"
+        id="floatingInputValue"
+        placeholder="name@example.com"
+        value="test@example.com"
+      />
+      <label for="floatingInputValue">Input with value</label>
+    </form>
+    <!-- COMMENTS -->
+    <div class="form-floating">
+      <textarea
+        class="form-control"
+        placeholder="Leave a comment here"
+        id="floatingTextarea"
+      ></textarea>
+      <label for="floatingTextarea">Comments</label>
+    </div>
+    <!-- SELECTS -->
+    <div class="form-floating">
+      <select
+        class="form-select"
+        id="floatingSelect"
+        aria-label="Floating label select example"
+      >
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <label for="floatingSelect">Works with selects</label>
+    </div>
+    <!-- INPUT GROUP -->
+    <div class="input-group mb-3">
+      <span class="input-group-text">Enter the Email</span>
+      <div class="form-floating">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInputGroup1"
+          placeholder="Username"
+        />
+        <label for="floatingInputGroup1">Email</label>
+      </div>
+    </div>
+    <!-- with feed back -->
+    <div class="input-group has-validation">
+      <span class="input-group-text">@</span>
+      <div class="form-floating is-invalid">
+        <input
+          type="text"
+          class="form-control is-invalid"
+          id="floatingInputGroup2"
+          placeholder="Username"
+          required
+        />
+        <label for="floatingInputGroup2">Username</label>
+      </div>
+      <div class="invalid-feedback">Please choose a username.</div>
+    </div>
+    <!-- with 2 input one is email and selection -->
+    <div class="row g-2">
+      <div class="col-md">
+        <div class="form-floating">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInputGrid"
+            placeholder="name@example.com"
+            value="mdo@example.com"
+          />
+          <label for="floatingInputGrid">Email address</label>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="form-floating">
+          <select class="form-select" id="floatingSelectGrid">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <label for="floatingSelectGrid">Works with selects</label>
+        </div>
+      </div>
+    </div>
+    <!-- Accordian -->
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            Accordion Item #1
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <strong>This is the first item's accordion body.</strong> It is
+            shown by default, until the collapse plugin adds the appropriate
+            classes that we use to style each element. These classes control the
+            overall appearance, as well as the showing and hiding via CSS
+            transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            Accordion Item #2
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is
+            hidden by default, until the collapse plugin adds the appropriate
+            classes that we use to style each element. These classes control the
+            overall appearance, as well as the showing and hiding via CSS
+            transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            Accordion Item #3
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is
+            hidden by default, until the collapse plugin adds the appropriate
+            classes that we use to style each element. These classes control the
+            overall appearance, as well as the showing and hiding via CSS
+            transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne"
+            aria-expanded="false"
+            aria-controls="flush-collapseOne"
+          >
+            Accordion Item #1
+          </button>
+        </h2>
+        <div
+          id="flush-collapseOne"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Placeholder content for this accordion, which is intended to
+            demonstrate the <code>.accordion-flush</code> class. This is the
+            first item's accordion body.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwo"
+          >
+            Accordion Item #2
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwo"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Placeholder content for this accordion, which is intended to
+            demonstrate the <code>.accordion-flush</code> class. This is the
+            second item's accordion body. Let's imagine this being filled with
+            some actual content.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseThree"
+          >
+            Accordion Item #3
+          </button>
+        </h2>
+        <div
+          id="flush-collapseThree"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Placeholder content for this accordion, which is intended to
+            demonstrate the <code>.accordion-flush</code> class. This is the
+            third item's accordion body. Nothing more exciting happening here in
+            terms of content, but just filling up the space to make it look, at
+            least at first glance, a bit more representative of how this would
+            look in a real-world application.
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne"
+            aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseOne"
+          >
+            Accordion Item #1
+          </button>
+        </h2>
+        <div
+          id="panelsStayOpen-collapseOne"
+          class="accordion-collapse collapse show"
+        >
+          <div class="accordion-body">
+            <strong>This is the first item's accordion body.</strong> It is
+            shown by default, until the collapse plugin adds the appropriate
+            classes that we use to style each element. These classes control the
+            overall appearance, as well as the showing and hiding via CSS
+            transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseTwo"
+            aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseTwo"
+          >
+            Accordion Item #2
+          </button>
+        </h2>
+        <div
+          id="panelsStayOpen-collapseTwo"
+          class="accordion-collapse collapse"
+        >
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is
+            hidden by default, until the collapse plugin adds the appropriate
+            classes that we use to style each element. These classes control the
+            overall appearance, as well as the showing and hiding via CSS
+            transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseThree"
+            aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseThree"
+          >
+            Accordion Item #3
+          </button>
+        </h2>
+        <div
+          id="panelsStayOpen-collapseThree"
+          class="accordion-collapse collapse"
+        >
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is
+            hidden by default, until the collapse plugin adds the appropriate
+            classes that we use to style each element. These classes control the
+            overall appearance, as well as the showing and hiding via CSS
+            transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <!-- BUTTONS -->
+    <h1>BUTTONS</h1>
+    <button type="button" class="btn">Base class</button>
+    <h2>Variants</h2>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+
+    <button type="button" class="btn btn-warning">df</button>
+    <!-- button tags with detailed info -->
+    <br />
+    <br />
+    <a class="btn btn-primary" href="#" role="button">Link</a>
+    <button class="btn btn-primary" type="submit">Button</button>
+    <input class="btn btn-primary" type="button" value="Input" />
+    <input class="btn btn-primary" type="submit" value="Submit" />
+    <input class="btn btn-primary" type="reset" value="Reset" />
+    <!-- Outline borders for button -->
+    <br />
+    <br />
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-light">Light</button>
+    <button type="button" class="btn btn-outline-dark btn-lg">Dark</button>
+    <!-- Button center -->
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-primary" type="button">Button</button>
+      <button class="btn btn-primary" type="button">Button</button>
+    </div>
+    <br />
+    <!-- Button left -->
+    <div class="d-grid gap-2 d-md-flex justify-content-md-evenly">
+      <button class="btn btn-primary me-md-2" type="button">Button</button>
+      <button class="btn btn-primary" type="button">Button</button>
+    </div>
+    <br />
+    <br />
+    <!-- Toogle buttons -->
+    <p class="d-inline-flex gap-1">
+      <button type="button" class="btn" data-bs-toggle="button">
+        Toggle button
+      </button>
+      <button
+        type="button"
+        class="btn active"
+        data-bs-toggle="button"
+        aria-pressed="true"
+      >
+        Active toggle button
+      </button>
+      <button type="button" class="btn" disabled data-bs-toggle="button">
+        Disabled toggle button
+      </button>
+    </p>
+    <p class="d-inline-flex gap-1">
+      <button type="button" class="btn btn-primary" data-bs-toggle="button">
+        Toggle button
+      </button>
+      <button
+        type="button"
+        class="btn btn-primary active"
+        data-bs-toggle="button"
+        aria-pressed="true"
+      >
+        Active toggle button
+      </button>
+      <button
+        type="button"
+        class="btn btn-primary"
+        disabled
+        data-bs-toggle="button"
+      >
+        Disabled toggle button
+      </button>
+    </p>
+    <!-- CARDS -->
+    <br /><br />
+    <h1>CARDS</h1>
+    <div class="card" style="width: 18rem">
+      <img src="./assests/761.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <!-- QUOTE -->
+    <div class="card">
+      <div class="card-header">Quote</div>
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p>A well-known quote, contained in a blockquote element.</p>
+          <footer class="blockquote-footer">
+            Someone famous in <cite title="Source Title">vARUNS Title</cite>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+    <!-- Using Utilities -->
+    <div class="card w-75 mb-3">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <a href="#" class="btn btn-primary">Button</a>
+      </div>
+    </div>
+
+    <div class="card w-75">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <a href="#" class="btn btn-primary">Button</a>
+      </div>
+    </div>
+    <!-- text - alignment -->
+    <div class="card mb-3" style="width: 18rem">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="card text-center mb-3" style="width: 18rem">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="card text-end" style="width: 18rem">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <!-- Navigation -->
+    <div class="card text-center">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="true" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link display-5" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <!-- IMAGE OVERALAYS -->
+    <div class="card text-bg-dark w-50">
+      <img src="./assests/761.jpg" class="card-img w-100" alt="..." />
+      <div class="card-img-overlay">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          This is a wider card with supporting text below as a natural lead-in
+          to additional content. This content is a little bit longer.
+        </p>
+        <p class="card-text"><small>Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <!-- HORIZONTAL -->
+    <div class="card mb-3" style="max-width: 540px">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img
+            src="./assests/761.jpg"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BACKGROUND COLOR -->
+    <div class="card text-bg-primary mb-3" style="max-width: 18rem">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Primary card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+    <div class="card text-bg-secondary mb-3" style="max-width: 18rem">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Secondary card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+    <div class="card text-bg-success mb-3" style="max-width: 18rem">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Success card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+    <div class="card text-bg-danger mb-3" style="max-width: 18rem">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Danger card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+    <div class="card text-bg-warning mb-3" style="max-width: 18rem">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Warning card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+    <div class="card text-bg-info mb-3" style="max-width: 18rem">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Info card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+    <div class="card text-bg-light mb-3" style="max-width: 18rem">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Light card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+    <div class="card text-bg-dark mb-3" style="max-width: 18rem">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Dark card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+    <!-- GIFT CARD -->
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./assests/761.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- COLLAPSE -->
+    <h1>COLLAPSE</h1>
+    <p class="d-inline-flex gap-1">
+      <a
+        class="btn btn-primary"
+        data-bs-toggle="collapse"
+        href="#collapseExample"
+        role="button"
+        aria-expanded="false"
+        aria-controls="collapseExample"
+      >
+        Link with href
+      </a>
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseExample"
+        aria-expanded="false"
+        aria-controls="collapseExample"
+      >
+        Button with data-bs-target
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        Some placeholder content for the collapse component. This panel is
+        hidden by default but revealed when the user activates the relevant
+        trigger.
+      </div>
+    </div>
+    <p>
+      ============================================================================================
+    </p>
+    <!-- DROPDOWNS -->
+    <div class="dropdown">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+    <!-- Example single danger button -->
+    <div class="btn-group">
+      <button
+        type="button"
+        class="btn btn- dropdown-toggle"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Action
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li><hr class="dropdown-divider" /></li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <br />
+    <!-- MODAL -->
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#staticBackdrop"
+    >
+      Launch static backdrop modal
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Modal title
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- NAVS AND TABS -->
+    <br />
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <br />
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <br />
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Active</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          data-bs-toggle="dropdown"
+          href="#"
+          role="button"
+          aria-expanded="false"
+          >Dropdown</a
+        >
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <!-- OFF CANVAS -->
+    <button
+      class="btn btn-primary"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasTop"
+      aria-controls="offcanvasTop"
+    >
+      Toggle top offcanvas
+    </button>
+
+    <div
+      class="offcanvas offcanvas-top"
+      tabindex="-1"
+      id="offcanvasTop"
+      aria-labelledby="offcanvasTopLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">...</div>
+    </div>
+    <!-- PAGINATION -->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-xxl-evenly">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- TOOLTIP -->
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-title="Tooltip on top"
+    >
+      Tooltip on top
+    </button>
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="right"
+      data-bs-title="Tooltip on right"
+    >
+      Tooltip on right
+    </button>
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="bottom"
+      data-bs-title="Tooltip on bottom"
+    >
+      Tooltip on bottom
+    </button>
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="left"
+      data-bs-title="Tooltip on left"
+    >
+      Tooltip on left
+    </button>
+    <br />
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      data-bs-custom-class="custom-tooltip"
+      data-bs-title="This top tooltip is themed via CSS variables."
+    >
+      Custom tooltip
+    </button>
+  </body>
+</html>
